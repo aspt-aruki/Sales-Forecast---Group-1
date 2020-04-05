@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>
+        Introduction - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" integrity="sha256-3iu9jgsy9TpTwXKb7bNQzqWekRX7pPK+2OLj3R922fo=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css" integrity="sha256-QiWfLIsCT02Sdwkogf6YMiQlj4NE84MKkzEMkZnMGdg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism.min.css" integrity="sha256-vtR0hSWRc3Tb26iuN2oZHt3KRUomwTufNIf5/4oeCyg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@hackmd/emojify.js@2.1.0/dist/css/basic/emojify.min.css" integrity="sha256-UOrvMOsSDSrW6szVLe8ZDZezBxh5IoIfgTwdNDgTjiU=" crossorigin="anonymous" />
+    <style>
+        @charset "UTF-8";@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i|Source+Code+Pro:300,400,500|Source+Sans+Pro:300,300i,400,400i,600,600i|Source+Serif+Pro&subset=latin-ext);.hljs{display:block;background:#fff;padding:.5em;color:#333;overflow-x:auto}.hljs-comment,.hljs-meta{color:#969896}.hljs-emphasis,.hljs-quote,.hljs-string,.hljs-strong,.hljs-template-variable,.hljs-variable{color:#df5000}.hljs-keyword,.hljs-selector-tag,.hljs-type{color:#a71d5d}.hljs-attribute,.hljs-bullet,.hljs-literal,.hljs-number,.hljs-symbol{color:#0086b3}.hljs-built_in,.hljs-builtin-name{color:#005cc5}.hljs-name,.hljs-section{color:#63a35c}.hljs-tag{color:#333}.hljs-attr,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-id,.hljs-selector-pseudo,.hljs-title{color:#795da3}.hljs-addition{color:#55a532;background-color:#eaffea}.hljs-deletion{color:#bd2c00;background-color:#ffecec}.hljs-link{text-decoration:underline}.markdown-body{font-size:16px;line-height:1.5;word-wrap:break-word}.markdown-body:after,.markdown-body:before{display:table;content:""}.markdown-body:after{clear:both}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body a:not([href]){color:inherit;text-decoration:none}.markdown-body .absent{color:#c00}.markdown-body .anchor{float:left;padding-right:4px;margin-left:-20px;line-height:1}.markdown-body .anchor:focus{outline:none}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:16px}.markdown-body hr{height:.25em;padding:0;margin:24px 0;background-color:#e7e7e7;border:0}.markdown-body blockquote{font-size:16px;padding:0 1em;color:#777;border-left:.25em solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body kbd,.popover kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.markdown-body .loweralpha{list-style-type:lower-alpha}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2em}.markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.markdown-body h2{font-size:1.5em}.markdown-body h3{font-size:1.25em}.markdown-body h4{font-size:1em}.markdown-body h5{font-size:.875em}.markdown-body h6{font-size:.85em;color:#777}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:16px}.markdown-body li+li{padding-top:.25em}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 16px;margin-bottom:16px}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;box-sizing:content-box;background-color:#fff}.markdown-body img[align=right]{padding-left:20px}.markdown-body img[align=left]{padding-right:20px}.markdown-body .emoji{max-width:none;vertical-align:text-top;background-color:transparent}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:0;padding-top:.2em;padding-bottom:.2em;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre{word-wrap:normal}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown-body .highlight{margin-bottom:16px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body .highlight pre,.markdown-body pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0 none}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body .emoji{vertical-align:top}.markdown-body pre{border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 16px}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:none;padding:0}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:""}.markdown-body code[data-gist-id] .blob-num{border:unset}.markdown-body code[data-gist-id] table{overflow:unset;margin-bottom:unset}.markdown-body code[data-gist-id] table tr{background:unset}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.abc,.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram,.markdown-body pre.vega{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.abc>code,.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code,.markdown-body pre.vega>code{text-align:left}.markdown-body pre.abc>svg,.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg,.markdown-body pre.vega>svg{max-width:100%;height:100%}.markdown-body pre>code.wrap{white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word}.markdown-body .alert>p,.markdown-body .alert>ul{margin-bottom:0}.markdown-body summary{display:list-item}.markdown-body summary:focus{outline:none}.markdown-body details summary{cursor:pointer}.markdown-body details:not([open])>:not(summary){display:none}.markdown-body figure{margin:1em 40px}.markdown-body .mark,.markdown-body mark{background-color:#fff1a7}.vimeo,.youtube{cursor:pointer;display:table;text-align:center;background-position:50%;background-repeat:no-repeat;background-size:contain;background-color:#000;overflow:hidden}.vimeo,.youtube{position:relative;width:100%}.youtube{padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe,.youtube img{width:100%;height:100%;position:absolute;top:0;left:0}.vimeo iframe,.youtube iframe{vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;opacity:.3;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.MJX_Assistive_MathML{display:none}.ui-infobar{position:relative;z-index:2;max-width:760px;margin:25px auto -25px;padding:0 15px;color:#777}.toc .invisable-node{list-style-type:none}.ui-toc{position:fixed;bottom:20px;z-index:998}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:70vh;overflow:auto;text-align:inherit}.ui-toc-dropdown>.toc{max-height:calc(70vh - 100px);overflow:auto}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li:first-child:last-child > ul,.ui-toc-dropdown .toc.expand ul{display:block}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:12px;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif}html[lang^=ja] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] .markdown-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html .markdown-body[lang^=ja]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html .markdown-body[lang=zh-tw]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html .markdown-body[lang=zh-cn]{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Helvetica,Roboto,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}html[lang^=ja] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html[lang=zh-tw] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html[lang=zh-cn] .ui-toc-dropdown{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}html .ui-toc-dropdown[lang^=ja]{font-family:Source Sans Pro,Helvetica,Arial,Meiryo UI,MS PGothic,ＭＳ\ Ｐゴシック,sans-serif}html .ui-toc-dropdown[lang=zh-tw]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft JhengHei UI,微軟正黑UI,sans-serif}html .ui-toc-dropdown[lang=zh-cn]{font-family:Source Sans Pro,Helvetica,Arial,Microsoft YaHei UI,微软雅黑UI,sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.expand-toggle,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:12px;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.expand-toggle:focus,.expand-toggle:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.back-to-top,.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;display:block;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px;background-position:50%;background-repeat:no-repeat;background-size:cover}.ui-user-icon.small{width:18px;height:18px;display:inline-block;vertical-align:middle;margin:0 0 .2em}.ui-infobar>small>span{line-height:22px}.ui-infobar>small .dropdown{display:inline-block}.ui-infobar>small .dropdown a:focus,.ui-infobar>small .dropdown a:hover{text-decoration:none}.ui-published-note{color:#337ab7}.ui-published-note .fa{font-size:20px;vertical-align:top}.unselectable{-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:12px!important}}.markdown-body.slides{position:relative;z-index:1;color:#222}.markdown-body.slides:before{content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;z-index:-1;background-color:currentColor;box-shadow:0 0 0 50vw}.markdown-body.slides section[data-markdown]{position:relative;margin-bottom:1.5em;background-color:#fff;text-align:center}.markdown-body.slides section[data-markdown] code{text-align:left}.markdown-body.slides section[data-markdown]:before{content:"";display:block;padding-bottom:56.23%}.markdown-body.slides section[data-markdown]>div:first-child{position:absolute;top:50%;left:1em;right:1em;transform:translateY(-50%);max-height:100%;overflow:hidden}.markdown-body.slides section[data-markdown]>ul{display:inline-block}.markdown-body.slides>section>section+section:after{content:"";position:absolute;top:-1.5em;right:1em;height:1.5em;border:3px solid #777}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:0 0 1em transparent,1px 1px 1.2px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;letter-spacing:.025em}.focus,:focus{outline:none!important}::-moz-focus-inner{border:0!important}body{font-family:Source Sans Pro,Helvetica,Arial,sans-serif}html[lang^=ja] body{font-family:Source Sans Pro,Helvetica,Arial,Hiragino Kaku Gothic Pro,ヒラギノ角ゴ Pro W3,Osaka,Meiryo,メイリオ,MS Gothic,ＭＳ\ ゴシック,sans-serif}html[lang=zh-tw] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang TC,Microsoft JhengHei,微軟正黑,sans-serif}html[lang=zh-cn] body{font-family:Source Sans Pro,Helvetica,Arial,PingFang SC,Microsoft YaHei,微软雅黑,sans-serif}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}abbr[data-original-title],abbr[title]{cursor:help}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js" integrity="sha256-g6iAfvZp+nDQ2TdTR/VVKJf3bGro4ub5fvWSWVRi2NE=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.9/es5-shim.min.js" integrity="sha256-8E4Is26QH0bD52WoQpcB+R/tcWQtpzlCojrybUd7Mxo=" crossorigin="anonymous"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid comment-enabled" data-hard-breaks="true"><p><img src="https://i.imgur.com/mHymGgz.png" alt=""><br>
+<em><strong></strong></em></p><center><em><strong>User Instruction Manual</strong></em></center><br><em><center>Last Updated April 2020</center></em><p></p><p><span class="toc"><ul>
+<li><a href="#Introduction" title="Introduction">Introduction</a></li>
+<li><a href="#Aruki-Folder" title="Aruki Folder">Aruki Folder</a></li>
+<li><a href="#Setting-Up-For-the-First-Time" title="Setting Up For the First Time">Setting Up For the First Time</a><ul>
+<li><a href="#Downloading-the-Software" title="Downloading the Software">Downloading the Software</a><ul>
+<li><a href="#CRAN-R" title="CRAN R">CRAN R</a></li>
+<li><a href="#RStudio" title="RStudio">RStudio</a></li>
+<li><a href="#PowerBI-Dashboard" title="PowerBI Dashboard">PowerBI Dashboard</a></li>
+<li><a href="#Downloading-PowerBI-Software" title="Downloading PowerBI Software">Downloading PowerBI Software</a></li>
+</ul>
+</li>
+<li><a href="#Using-the-Software-for-the-first-time" title="Using the Software for the first time">Using the Software for the first time</a><ul>
+<li><a href="#Creating-App-Shortcut" title="Creating App Shortcut">Creating App Shortcut</a></li>
+<li><a href="#PowerBI-Dashboard1" title="PowerBI Dashboard">PowerBI Dashboard</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#For-Subsequent-Use" title="For Subsequent Use">For Subsequent Use</a><ul>
+<li><a href="#Loading-New-Data" title="Loading New Data">Loading New Data</a><ul>
+<li><a href="#SAP-Business-One" title="SAP Business One">SAP Business One</a></li>
+</ul>
+</li>
+<li><a href="#R-Shiny-Application" title="R Shiny Application">R Shiny Application</a><ul>
+<li><a href="#Update-and-Run-the-App" title="Update and Run the App">Update and Run the App</a></li>
+<li><a href="#Functions-of-the-App" title="Functions of the App">Functions of the App</a></li>
+<li><a href="#How-to-Use-the-App" title="How to Use the App">How to Use the App</a></li>
+</ul>
+</li>
+<li><a href="#PowerBI-Dashboard---Sales-Analysis" title="PowerBI Dashboard - Sales Analysis">PowerBI Dashboard - Sales Analysis</a><ul>
+<li><a href="#Updating-the-data" title="Updating the data">Updating the data</a></li>
+<li><a href="#Navigating-around-the-Sales-Dashboard" title="Navigating around the Sales Dashboard">Navigating around the Sales Dashboard</a></li>
+<li><a href="#Possible-PowerBI-Dashboard-Errors" title="Possible PowerBI Dashboard Errors">Possible PowerBI Dashboard Errors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</span></p><hr><h1 id="Introduction"><a class="anchor hidden-xs" href="#Introduction" title="Introduction"><span class="octicon octicon-link"></span></a><strong>Introduction</strong></h1><p>This instruction manual aims to provide a step-by-step guide on the usage of the various data files as well as the process on how to forecast ASPT-Aruki sales in the future using the application.</p><p>The following are the deliverables that are presented to you in a folder called <strong>Aruki</strong>:</p><ol>
+<li>R-Scripts</li>
+<li>R-Shiny Application</li>
+<li>Dashboard</li>
+<li>Instruction Manual</li>
+</ol><h1 id="Aruki-Folder"><a class="anchor hidden-xs" href="#Aruki-Folder" title="Aruki-Folder"><span class="octicon octicon-link"></span></a><strong>Aruki Folder</strong></h1><p>In the Aruki Folder that is given to you, it should contain the following docs:</p><ul>
+<li>app.R</li>
+<li>Create_shortcut.R</li>
+<li><code>Dashboard</code> folder</li>
+<li>Dashboard.pbix</li>
+<li><code>Data</code> folder <strong>(Save your 4 data files here)</strong></li>
+<li><code>Prog Files</code> folder <strong>(Please do not touch this)</strong></li>
+<li><code>www</code> folder <strong>(Please do not touch this)</strong>
+<blockquote>
+<p><img src="https://i.imgur.com/tCU1YUN.jpg" alt=""></p>
+</blockquote>
+</li>
+</ul><h1 id="Setting-Up-For-the-First-Time"><a class="anchor hidden-xs" href="#Setting-Up-For-the-First-Time" title="Setting-Up-For-the-First-Time"><span class="octicon octicon-link"></span></a>Setting Up For the First Time</h1><h2 id="Downloading-the-Software"><a class="anchor hidden-xs" href="#Downloading-the-Software" title="Downloading-the-Software"><span class="octicon octicon-link"></span></a>Downloading the Software</h2><h3 id="CRAN-R"><a class="anchor hidden-xs" href="#CRAN-R" title="CRAN-R"><span class="octicon octicon-link"></span></a>CRAN R</h3><ol>
+<li>Open an internet browser and go to <a href="https://cran.rstudio.com" target="_blank" rel="noopener">https://cran.rstudio.com</a></li>
+<li>Click on the <code>Download R for Windows</code> link.
+<blockquote>
+<p><img src="https://i.imgur.com/tyQ9tg0.png" alt=""></p>
+</blockquote>
+</li>
+<li>Click on the <code>install R for the first time</code> link at the top of the page.
+<blockquote>
+<p><img src="https://i.imgur.com/S4mWBk6.png" alt=""></p>
+</blockquote>
+</li>
+<li>Click <code>Download R for Windows</code> and save the executable file somewhere on your computer. Run the .exe file and follow the installation  instructions.
+<blockquote>
+<p><img src="https://i.imgur.com/ju3Q2CI.jpg" alt=""></p>
+</blockquote>
+</li>
+</ol><h3 id="RStudio"><a class="anchor hidden-xs" href="#RStudio" title="RStudio"><span class="octicon octicon-link"></span></a>RStudio</h3><ol>
+<li>Go to <a href="https://rstudio.com/products/rstudio/download/#download" target="_blank" rel="noopener">https://rstudio.com/products/rstudio/download/#download</a>.</li>
+<li>Click on <strong>DOWNLOAD RSTUDIO FOR DESKTOP</strong>.
+<blockquote>
+<p><img src="https://i.imgur.com/dvg2Lio.jpg" alt=""></p>
+</blockquote>
+</li>
+<li>Save the executable file somewhere on your computer. Run the .exe file and follow the installation  instructions.</li>
+</ol><h3 id="PowerBI-Dashboard"><a class="anchor hidden-xs" href="#PowerBI-Dashboard" title="PowerBI-Dashboard"><span class="octicon octicon-link"></span></a>PowerBI Dashboard</h3><h3 id="Downloading-PowerBI-Software"><a class="anchor hidden-xs" href="#Downloading-PowerBI-Software" title="Downloading-PowerBI-Software"><span class="octicon octicon-link"></span></a>Downloading PowerBI Software</h3><ol>
+<li>Go to <a href="https://powerbi.microsoft.com/en-us/desktop/" target="_blank" rel="noopener">https://powerbi.microsoft.com/en-us/desktop/</a></li>
+<li>Click <code>Download Free</code>
+<blockquote>
+<p><img src="https://i.imgur.com/y7phOvd.png" alt=""></p>
+</blockquote>
+</li>
+<li>Click <code>Open Microsoft Store</code>
+<blockquote>
+<p><img src="https://i.imgur.com/euBFhWN.png" alt=""></p>
+</blockquote>
+</li>
+<li>Press <code>Get</code> to install PowerBI Desktop
+<blockquote>
+<p><img src="https://i.imgur.com/0e0I9hq.png" alt=""></p>
+</blockquote>
+</li>
+</ol><h2 id="Using-the-Software-for-the-first-time"><a class="anchor hidden-xs" href="#Using-the-Software-for-the-first-time" title="Using-the-Software-for-the-first-time"><span class="octicon octicon-link"></span></a>Using the Software for the first time</h2><h3 id="Creating-App-Shortcut"><a class="anchor hidden-xs" href="#Creating-App-Shortcut" title="Creating-App-Shortcut"><span class="octicon octicon-link"></span></a>Creating App Shortcut</h3><div class="alert alert-info">
+<p><strong>Note:</strong> This shortcut is only applicable to <strong>Windows</strong> or <strong>Unix</strong></p>
+</div><ol>
+<li>
+<p>In the <strong>Aruki</strong> Folder, open the file called <code>Create.shortcut.R</code> in RStudio.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/ZPHbsjB.jpg" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>Run the <code>Create.shortcut.R</code> in Rstudio</p>
+<p>a. Press <strong>CTRL + A</strong> to highlight all the code in the R script<br>
+b. Then press <strong>CTRL + Enter</strong> to run the codes</p>
+<blockquote>
+<p><img src="https://i.imgur.com/Dy3tT1R.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>After running the script , the console at the bottom will show the the following output :</p>
+<ul>
+<li><em><strong>Writing .shiny_run/shinyShortcut.cmd</strong></em></li>
+<li><em><strong>Writing shinyShortcut.vbs</strong></em></li>
+</ul>
+<blockquote>
+<p><img src="https://i.imgur.com/mP3hRMG.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>In the <code>Aruki</code>folder, a new folder called <code>.shiny_run</code> will be created</p>
+<blockquote>
+<p><img src="https://i.imgur.com/epuajHo.jpg" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>The folder contain the command prompt shortcut called <strong>shinyShortcut.cmd</strong> which you can save it anywhere(e.g. Desktop)</p>
+<blockquote>
+<p><img src="https://i.imgur.com/x1IWbYd.jpg" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>In the future, you would just need to click on <code>shinyShortcut.cmd</code> to open the app.</p>
+<div class="alert alert-info">
+<p><strong>Alternative</strong>: If <code>shinyShortcut.cmd</code> does not work for you, Open <code>App.R</code> in Aruki folder and Press <strong>Run App</strong> on the right hand side of the screen to open the app.</p>
+<p><img src="https://i.imgur.com/eEmCNwC.png" alt=""></p>
+</div>
+</li>
+</ol><h3 id="PowerBI-Dashboard1"><a class="anchor hidden-xs" href="#PowerBI-Dashboard1" title="PowerBI-Dashboard1"><span class="octicon octicon-link"></span></a>PowerBI Dashboard</h3><h4 id="Changing-Directory-Path-for-PowerBI"><a class="anchor hidden-xs" href="#Changing-Directory-Path-for-PowerBI" title="Changing-Directory-Path-for-PowerBI"><span class="octicon octicon-link"></span></a>Changing Directory Path for PowerBI</h4><ol>
+<li>
+<p>Open <code>Dashboard.pbix</code> that is saved in the Aruki folder</p>
+<blockquote>
+<p><img src="https://i.imgur.com/1nPKdHl.jpg" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>Go to <strong>Home &gt; Queries &gt; Transform Data &gt; Data Source Settings</strong></p>
+<blockquote>
+<p><img src="https://i.imgur.com/nG3nnpU.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>Click on the filepath that contain <code>final_powerbi_dashboard.csv</code></p>
+<blockquote>
+<p><img src="https://i.imgur.com/k7OlmfI.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>Click on <strong>Change Source</strong></p>
+<blockquote>
+<p><img src="https://i.imgur.com/xjrve60.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>Click on <strong>Browse</strong> to change the file directory</p>
+<blockquote>
+<p><img src="https://i.imgur.com/WxcFkai.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>In the Aruki folder, there is a subfolder called <code>Dashboard</code> which contains all the datafiles needed for the dashboard. Choose <code>final_powerbi_dashboard</code> and press open.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/7p3u2jh.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>Click <strong>OK</strong></p>
+<blockquote>
+<p><img src="https://i.imgur.com/GpSXiD5.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>Repeat steps 3 to 7 for the remaining csv files -</p>
+<blockquote>
+<ul>
+<li><code>Final_PowerBIdashboard_Code.csv</code></li>
+<li><code>Final_PowerBIdashboard_Item_No.csv</code></li>
+<li><code>Final_PowerBIdashboard_Main_Category.csv</code></li>
+<li><code>Final_PowerBIdashboard_Purchase.csv</code></li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>After that, Click <strong>Close</strong> once you finishing changing the source</p>
+<blockquote>
+<p><img src="https://i.imgur.com/lyPaRmV.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>A ribbon error will appear. Click <strong>Apply Changes</strong> to update the data.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/zwaOyh8.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>An Apply Query Changes screen will appear. Once it finishing loading. The screen will automatically closed.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/7Orygj6.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>Please <strong>Save</strong> the the changes by click the save icon on the left side of the screen.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/pGmfT9V.png" alt=""></p>
+</blockquote>
+</li>
+</ol><hr><h1 id="For-Subsequent-Use"><a class="anchor hidden-xs" href="#For-Subsequent-Use" title="For-Subsequent-Use"><span class="octicon octicon-link"></span></a>For Subsequent Use</h1><h2 id="Loading-New-Data"><a class="anchor hidden-xs" href="#Loading-New-Data" title="Loading-New-Data"><span class="octicon octicon-link"></span></a>Loading New Data</h2><h3 id="SAP-Business-One"><a class="anchor hidden-xs" href="#SAP-Business-One" title="SAP-Business-One"><span class="octicon octicon-link"></span></a>SAP Business One</h3><ol>
+<li>
+<p>Extract a minimum 5 years of information for the following data from SAP Business One</p>
+<ol>
+<li>
+<p><strong>Item Listing data</strong></p>
+<ol>
+<li>
+<p>Save file as: <code>Item_listing.xlsx</code></p>
+</li>
+<li>
+<p>Column Names of Item Listing :</p>
+<blockquote>
+<ul>
+<li>Code</li>
+<li>Item No.</li>
+<li>Item Description</li>
+<li>Name</li>
+<li>Main Category</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>AR Invoice data</strong></p>
+<ol>
+<li>
+<p>File Name as: <code>AR_Invoice.xlsx</code></p>
+</li>
+<li>
+<p>Column Names of AR Invoice:</p>
+<blockquote>
+<ul>
+<li>Document Number</li>
+<li>Posting Date</li>
+<li>Employee No</li>
+<li>First Name</li>
+<li>Last Name</li>
+<li>Customer/Vendor Code</li>
+<li>Item No.</li>
+<li>Item/Service Description</li>
+<li>Quantity</li>
+<li>Price Currency</li>
+<li>Price after Discount</li>
+<li>Currency Rate</li>
+<li>Row Total</li>
+<li>Row Total (FC)</li>
+<li>Total Discount</li>
+<li>Total Discount (FC)</li>
+<li>Remarks</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Sales Order data</strong></p>
+<ol>
+<li>
+<p>File Name as: <code>Sales_order.xlsx</code></p>
+</li>
+<li>
+<p>Column Names of Sales Order:</p>
+<blockquote>
+<ul>
+<li>Document Number</li>
+<li>Posting Date</li>
+<li>Employee No</li>
+<li>Customer/Vendor Code</li>
+<li>Item No.</li>
+<li>Item/Service Description</li>
+<li>Quantity</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>AP Invoice data</strong></p>
+<ol>
+<li>
+<p>File Name as: <code>AP_invoice.xlsx</code></p>
+</li>
+<li>
+<p>Column Names of AP Invoice :</p>
+<blockquote>
+<ul>
+<li>Document Number</li>
+<li>Posting Date</li>
+<li>Employee No</li>
+<li>First Name</li>
+<li>Last Name</li>
+<li>Customer/Vendor Code</li>
+<li>Item No.</li>
+<li>Item/Service Description</li>
+<li>Quantity</li>
+<li>Price Currency</li>
+<li>Price after Discount</li>
+<li>Currency Rate</li>
+<li>Row Total</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>Ensure that these Excel Files are saved in the <strong>Data folder</strong> in <strong>Aruki</strong> folder.</p>
+</li>
+</ol><h2 id="R-Shiny-Application"><a class="anchor hidden-xs" href="#R-Shiny-Application" title="R-Shiny-Application"><span class="octicon octicon-link"></span></a>R Shiny Application</h2><h3 id="Update-and-Run-the-App"><a class="anchor hidden-xs" href="#Update-and-Run-the-App" title="Update-and-Run-the-App"><span class="octicon octicon-link"></span></a>Update and Run the App</h3><ol>
+<li>
+<p>Ensure that steps in <a href="#Loading-New-Data"><strong>Loading New Data Section</strong></a> have been done before running the app</p>
+<div class="alert alert-info">
+<p><strong>Note</strong>: In the future, please repeat <a href="#Loading-New-Data"><strong>Loading     New Data Section</strong></a> when you         have new data.</p>
+</div>
+</li>
+<li>
+<p>Run the forecast application using one the following methods:</p>
+<p>(A). Double Click  on <code>shinyShortcut.cmd</code> Or</p>
+<p>The command prompt would pop up when the shortcut is being executed  and you just need to wait for it load.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/RCOF6Ru.jpg" alt=""></p>
+</blockquote>
+<p>(B) Open <code>App.R</code> in Aruki folder and <strong>Press Run App</strong> on the right hand side of the screen</p>
+<blockquote>
+<p><img src="https://i.imgur.com/vdFaaWB.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>After running the app, a pop up screen will appear</p>
+<blockquote>
+<p><img src="https://i.imgur.com/24q2HAZ.jpg" alt=""></p>
+</blockquote>
+<div class="alert alert-info">
+<p><strong>Note:</strong> If the command prompt fails (step 2A),         check the <code>Missing Product Category.csv</code> in <code>Aruki</code>     Folder.<br>
+<img src="https://i.imgur.com/o6dXTog.jpg" alt=""></p>
+<blockquote></blockquote>
+<p>Please fill in the missing values <strong>NA</strong> and update     the <code>Item_listing.xlsx</code>.<br>
+<img src="https://i.imgur.com/WyWJtj0.jpg" alt=""></p>
+</div>
+</li>
+</ol><h3 id="Functions-of-the-App"><a class="anchor hidden-xs" href="#Functions-of-the-App" title="Functions-of-the-App"><span class="octicon octicon-link"></span></a>Functions of the App</h3><p>When the App starts, there will be an <strong>introduction tour</strong>. You may navigate the tour using the <code>next</code> and <code>previous</code> buttons.</p><blockquote>
+<p><img src="https://i.imgur.com/uiR22qb.png" alt=""></p>
+</blockquote><blockquote>
+<p>You can also skip the tour by clicking <code>skip</code> or anywhere outside the introduction boxes.<br>
+<img src="https://i.imgur.com/sU3dHYt.png" alt=""></p>
+</blockquote><h4 id="Sales-Forecast-Tab"><a class="anchor hidden-xs" href="#Sales-Forecast-Tab" title="Sales-Forecast-Tab"><span class="octicon octicon-link"></span></a>Sales Forecast Tab</h4><p>In the Sales Forecast tab, you are able to  perform the following functions:</p><blockquote>
+<p><img src="https://i.imgur.com/QX7T20U.png" alt=""></p>
+<ol>
+<li>Download a Forecast Input template</li>
+<li>Click  <a href="#Model-Tab"><strong>Model Tab</strong></a> to see model performance</li>
+<li>Click  <a href="#Variable-Tab"><strong>Variable Tab</strong></a> to see suggested input value for variables</li>
+<li>Upload your forecast inputs and click submit</li>
+<li>Select your preferable model to forecast the sale quantity</li>
+<li>View Predicted Sales Quantity and Download result in any of the following format (csv or xlsx)</li>
+</ol>
+</blockquote><h4 id="Variable-Tab"><a class="anchor hidden-xs" href="#Variable-Tab" title="Variable-Tab"><span class="octicon octicon-link"></span></a>Variable Tab</h4><p>In the Variable tab, you are able to  perform the following functions:</p><blockquote>
+<ol>
+<li>Browse the 5 plots (Per Main category, Code, Country) that shows historical data of the variables used for prediction</li>
+<li>Use the plots to make an estimated value for your inputs in Forecast Input template.<br>
+<img src="https://i.imgur.com/8bLmkBd.png" alt=""></li>
+</ol>
+</blockquote><h4 id="Model-Tab"><a class="anchor hidden-xs" href="#Model-Tab" title="Model-Tab"><span class="octicon octicon-link"></span></a>Model Tab</h4><p>In the Model tab, you are able to  perform the following functions:</p><blockquote>
+<p><img src="https://i.imgur.com/A5nr0VZ.png" alt=""></p>
+<ol>
+<li>Check the model performance of 7 models trained based on historical data given.</li>
+<li>Learn more about the models that are being used.</li>
+</ol>
+</blockquote><p>In general, the model with the <strong>lowest RMSE</strong> has the <strong>least errors</strong> and would be the <strong>best model</strong> to use for prediction.</p><h3 id="How-to-Use-the-App"><a class="anchor hidden-xs" href="#How-to-Use-the-App" title="How-to-Use-the-App"><span class="octicon octicon-link"></span></a>How to Use the App</h3><ol>
+<li>
+<p>Download the <code>forecast_input_template.xlsx</code> template In the <strong>Sales Forecast</strong> tab if you have  not done so.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/id741g5.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>Open the <code>forecast_input_template.xlsx</code> file to input details that you wish to predict. For example, to predict :</p>
+<blockquote>
+<p>(1) <strong>June 2020</strong> sales quantity for</p>
+<p>(2) Product Code <strong>R04</strong> whose</p>
+<p>(3)Main Category is <strong>REFRIGERATOR</strong> and</p>
+<p>(4) Country is <strong>BN</strong></p>
+<p>fill up excel as shown below,<img src="https://i.imgur.com/BKN5rq7.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>To input the other values in the <code>sales_forecast_input.xlxs</code>, click the <strong>See Variables</strong> Button on the left to navigate to the <strong>Variable Tab</strong>.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/1LL6YGC.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>Use the filters to enter <code>Main Category</code> ,<code>Code </code>and <code>Country</code>.<br>
+The plots will update according to the filters selected.<br>
+For the example above, to find what to input for monthly_qty_lag,</p>
+<blockquote>
+<p><img src="https://i.imgur.com/tv51cfU.png" alt=""></p>
+</blockquote>
+</li>
+</ol><div class="alert alert-info">
+<p>The filters must be entered according to this particular order: <code>Category</code> ,<code>Code</code> ,<code>Country</code>.<br>
+Otherwise, the filters will reset, i.e If you filter <code>Code</code>, then <code>Category</code>, <code>Code</code> will reset.</p>
+</div><ol start="5">
+<li>
+<p>Hover above the chart to find the value for previous year monthly quantity (eg. to predict June 2020, you would find <strong>June 2019</strong>)</p>
+<blockquote>
+<p><img src="https://i.imgur.com/lZRwFkU.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>You can input the actual values or any values within the 95% confidence interval (between ymin and ymax) in <code>forecast_input_template.xlsx</code>.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/BvWZ4i4.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>Repeat <strong>step 5 &amp; 6</strong> for the remaining four variables by navigating to <code>Average Production Days</code> ,<code>Average Transaction Day</code>,<code>Number of Invoice</code>,<code>Monthly Growth</code> tabs respective. Below is example’s input:</p>
+</li>
+</ol><blockquote>
+<p><img src="https://i.imgur.com/MWfSDeA.png" alt=""></p>
+</blockquote><ol start="8">
+<li>
+<p>After filling up <code>forecast_input_template.xlsx</code>, click on the  <strong>Back to Forecast</strong> button to upload the file.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/W7mW2X6.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>In the  Sales Forecast Tab, upload the filled up excel file on the right, under <code>Upload Forecast Inputs</code>.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/gtHdMvE.png" alt=""></p>
+<p><img src="https://i.imgur.com/4V6TKEg.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>Once the upload is complete, click the <strong>submit</strong> button to generate the predicted sales quantity.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/c3P8A5j.png" alt=""></p>
+</blockquote>
+<div class="alert alert-info">
+<p>If the app <strong>gray out</strong> ,<br>
+<img src="https://i.imgur.com/Oo3OHGl.png" alt=""></p>
+<ol>
+<li>
+<p>Please check your <code>forecast_input.xlsx</code> files that was uploaded to ensure that there are no typo errors.<br>
+<strong>Note</strong>: Our models can only predict Sales quanitity that have past transaction.</p>
+</li>
+<li>
+<p>To reupload the new input,<strong>refresh</strong> your browser.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>To decide which model to use, click on the <strong>See Model Performance</strong> button.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/8ORuXhM.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>In the model tab, seven models’ performance based on the historical data are shown. It is advisable to choose the model with the <strong>lowest RMSE</strong>.</p>
+<blockquote>
+<p>Toggle the arrows in the <strong>RMSE</strong> column to get the lowest/highest at the top of the table<br>
+<img src="https://i.imgur.com/uDy76h9.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>After that,  click <strong>Back to Forecast</strong> button and  select your preferable model to use.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/5YESTDp.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>The results will be shown in a table where you choose to download in either of the following format: CSV or Excel.</p>
+<ul>
+<li>You also have an option to download the predictions from all models through the <strong>All model predictions</strong> button.
+<blockquote>
+<p><img src="https://i.imgur.com/nh4CD9B.png" alt=""></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol><hr><h2 id="PowerBI-Dashboard---Sales-Analysis"><a class="anchor hidden-xs" href="#PowerBI-Dashboard---Sales-Analysis" title="PowerBI-Dashboard---Sales-Analysis"><span class="octicon octicon-link"></span></a>PowerBI Dashboard - Sales Analysis</h2><h3 id="Updating-the-data"><a class="anchor hidden-xs" href="#Updating-the-data" title="Updating-the-data"><span class="octicon octicon-link"></span></a>Updating the data</h3><ol>
+<li>
+<p>Run the steps in <a href="#Loading-New-Data"><strong>Loading New Data Section</strong></a> before opening the PowerBI dashboard</p>
+</li>
+<li>
+<p>After that, run the app once using the <code>shinyshortcut.cmd</code> or <code>app.r</code> so that new data is being generated for the dashboard.</p>
+</li>
+<li>
+<p>You will see that the data has already been loaded as <code>Final_PowerBI_dashboard</code> in <strong>Fields</strong> on the right</p>
+<blockquote>
+<p><img src="https://i.imgur.com/aB7XpaW.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>Click <strong>Home Tab → Under Queries</strong> section, Click <strong>Refresh</strong> to update the data!</p>
+<blockquote>
+<p><a href="https://i.imgur.com/Z2jSh4d.png" target="_blank" rel="noopener"></a></p>
+</blockquote>
+<div class="alert alert-info">
+<p>If there is the following error , Perform the steps     in <a href="#Changing-Directory-Path-for-PowerBI"><strong>Changing Directory Path for PowerBI</strong></a></p>
+<blockquote>
+<p><img src="https://i.imgur.com/59n6LFA.jpg" alt=""></p>
+</blockquote>
+</div>
+</li>
+</ol><h3 id="Navigating-around-the-Sales-Dashboard"><a class="anchor hidden-xs" href="#Navigating-around-the-Sales-Dashboard" title="Navigating-around-the-Sales-Dashboard"><span class="octicon octicon-link"></span></a>Navigating around the Sales Dashboard</h3><ol>
+<li>
+<p>To clear all filters in each of the boards, press <strong>CTRL + Click</strong> on the <code>Clear all filters</code> button.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/d0Rj1EY.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>On the right hand side of the each board, it contains  filters such as <code>Date</code>, <code>Main Category</code>, <code>Product Code</code> , <code>Item No.</code> and <code>Country</code>. This is where you can click to select or search desired inputs from drop down filter.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/ILaUOCa.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>To navigate between the pages, just click the tabs at the bottom.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/nqZgrUE.png" alt=""></p>
+</blockquote>
+</li>
+</ol><h4 id="A-Main-Board"><a class="anchor hidden-xs" href="#A-Main-Board" title="A-Main-Board"><span class="octicon octicon-link"></span></a>A. Main Board</h4><p>The Main section contains key figures and is intended to provide an overview of sales at ASPT-Aruki.</p><ol>
+<li>
+<p>The top of the dashboard contains some key figures at glance.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/PPvf91g.png" alt=""></p>
+<p><strong>Interpretation of KPI</strong> :</p>
+<table>
+<thead>
+<tr>
+<th><strong>KPI</strong></th>
+<th><strong>Rationale</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Year to Date Current Year’s Sales</td>
+<td>Shows how much sales have been made in the current year</td>
+</tr>
+<tr>
+<td>Past Year Sales</td>
+<td>Shows how much sales have been in the past year</td>
+</tr>
+<tr>
+<td>Current Year Sales as % of Past Year Sales</td>
+<td>Shows progress made in sales compared to past year sales</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+</li>
+<li>
+<p>The top left visual of the dashboard contains the Actual Sales throughout the years. Hover over the line chart to see the actual sales amount.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/P5BiivX.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>The right side of the dashboard contains <code>Sales By country</code></p>
+<blockquote>
+<p>Hover over to see:<br>
+(1) Country<br>
+(2) Total Sales<br>
+(3) Current year sales as % of Past Year</p>
+<p><img src="https://i.imgur.com/nTMB6Uy.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>At the bottom of the dashboard it contain Product Codes Ranked By Sales</p>
+<blockquote>
+<p>Hover over to see:<br>
+(1) total sales,<br>
+(2) total quantity sold, and<br>
+(3)the main category it belongs to.</p>
+<p><img src="https://i.imgur.com/YLeR35V.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>All visuals in the dashboard also act as <strong>cross filters</strong> for the remaining visuals by <strong>clicking/ctrl-clicking on other graphs</strong></p>
+<blockquote>
+<p>Eg. Selecting a country in the Sales by Country graph will filter the rest of graphs to show sales by that particular country</p>
+<p><img src="https://i.imgur.com/sW3HMte.png" alt=""></p>
+</blockquote>
+</li>
+</ol><div class="alert alert-info">
+<p><strong>Note</strong>  : To clear filter , <strong>CTRL + Click</strong> on the <code>Clear all filters</code> Button</p>
+</div><h4 id="B-TOP-10-Analysis"><a class="anchor hidden-xs" href="#B-TOP-10-Analysis" title="B-TOP-10-Analysis"><span class="octicon octicon-link"></span></a>B. TOP 10 Analysis</h4><p>In this page, it will show all the Top 10 products and Bottom 10 products by</p><ul>
+<li>Main Categories</li>
+<li>Product Codes</li>
+<li>Item Numbers</li>
+</ul><p><img src="https://i.imgur.com/GT854jU.png" alt=""></p><ol>
+<li>The left-most section contains the top 10 Main Categories by Sales
+<blockquote>
+<p><img src="https://i.imgur.com/YCkdiNg.png" alt=""></p>
+</blockquote>
+</li>
+</ol><ul>
+<li><strong>Hover</strong> over the graph to show tooltip
+<blockquote>
+<p><img src="https://i.imgur.com/fONPhIb.png" alt=""></p>
+<ul>
+<li>The tooltip will show dollar amount of sales (Darker blue) compared to dollar amount of purchases (Lighter Blue) in the last 5 years</li>
+<li>It will also provides a short explanation as to how to interpret this graph</li>
+</ul>
+</blockquote>
+</li>
+</ul><ol start="2">
+<li>The middle of the dashboard contains bar charts of the top 10 and bottom 10 Product Codes based on Sales.
+<blockquote>
+<p><img src="https://i.imgur.com/HMKEeKO.png" alt=""></p>
+<p>Similarly , hover over the graph to see tooltip</p>
+</blockquote>
+</li>
+<li>Lastly on the right-hand side of dashboard, Top 10 and Bottom 10 Item No based on Sales will be shown
+<blockquote>
+<p><img src="https://i.imgur.com/kqu6rgl.png" alt=""></p>
+<p>Similarly, hover over the graphs to see tooltip</p>
+</blockquote>
+</li>
+</ol><div class="alert alert-info">
+<p><strong>Note</strong>  : To clear filter , <strong>CTRL + Click</strong> on the <code>Clear all filters</code> Button</p>
+</div><h4 id="C-Internal-KPI"><a class="anchor hidden-xs" href="#C-Internal-KPI" title="C-Internal-KPI"><span class="octicon octicon-link"></span></a>C. Internal KPI</h4><p>This dashboard page measures each employee’s performance in Aruki. By selecting for each employee in the <code>Sales Ranked by Employee</code> visual, one will be able to cross-filter other visuals to see the proportion of walk-in vs. direct orders, as well as top 10 countries for each employee.<br>
+<img src="https://i.imgur.com/B6gz1a1.png" alt=""></p><ol>
+<li>
+<p>on the top right hand side of the dashboard, it contain the Employee Ranking by sales.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/V6j2zm8.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p><strong>Hover</strong> over the graph to see employee’s performance through the years</p>
+<blockquote>
+<p><img src="https://i.imgur.com/soWsnaQ.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>Selecting an employee (<strong>Clicking on a bar</strong>) in <code>Sales Ranked By Employee</code> Chart, it will show :</p>
+<blockquote>
+<p>(1) Details for top 10 countries they are in charge of<br>
+(2) Walk-in sales to direct order ratio<br>
+(3) Transaction details</p>
+<p><img src="https://i.imgur.com/WTjYGij.png" alt=""></p>
+</blockquote>
+</li>
+</ol><div class="alert alert-info">
+<p><strong>Note</strong> : To clear filter , <strong>CTRL + Click</strong> on the <code>Clear all filters</code> Button</p>
+</div><h4 id="D-Country-Analysis"><a class="anchor hidden-xs" href="#D-Country-Analysis" title="D-Country-Analysis"><span class="octicon octicon-link"></span></a>D. Country Analysis</h4><p>This page shows customer and product analysis for each country. It is able to identify the top 30 customers for each country as well as their top-selling items.</p><ol>
+<li>
+<p>On the left side of the dashboard, it contain the sales ranked by country.</p>
+<blockquote>
+<p><img src="https://i.imgur.com/esoPNPp.png" alt=""></p>
+<ul>
+<li>The bigger the size of the data point, the higher the volume of sale</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p><strong>Hover</strong> over to show trends in the previous years</p>
+<blockquote>
+<p><img src="https://i.imgur.com/A06Xt4B.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>Click on a datapoint in <code>Sales Ranked by country</code> to filter for<br>
+(1) Top customers per country<br>
+(2) Top item numbers per country</p>
+<blockquote>
+<p><img src="https://i.imgur.com/D5l4EqK.png" alt=""></p>
+</blockquote>
+</li>
+<li>
+<p>The top-right corner of the dashboard contains a Treemap - <code>Sales Ranked by Top 30 Customers</code></p>
+<blockquote>
+<p><img src="https://i.imgur.com/mKLBtxN.png" alt=""><br>
+Largest square tile shows customer with most sales</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Hover</strong> over the treemap to see sales for the last few years for a particular customer</p>
+<blockquote>
+<p><img src="https://i.imgur.com/ExlzO0n.png" alt=""></p>
+</blockquote>
+</li>
+</ol><div class="alert alert-info">
+<p><strong>Note</strong>  : To clear filter , <strong>CTRL + Click</strong> on the <code>Clear all filters</code> Button</p>
+</div><h3 id="Possible-PowerBI-Dashboard-Errors"><a class="anchor hidden-xs" href="#Possible-PowerBI-Dashboard-Errors" title="Possible-PowerBI-Dashboard-Errors"><span class="octicon octicon-link"></span></a>Possible PowerBI Dashboard Errors</h3><ol>
+<li>Accidental misalignment of graphs while using the dashboard</li>
+</ol><ul>
+<li><strong>Ctrl + Click</strong> on the <code>Clear all filters</code> button on the top right corner of each dashboard and everything will return to its original state</li>
+</ul><p>​</p></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="ui-toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav">
+<li class=""><a href="#Introduction" title="Introduction">Introduction</a></li>
+<li class=""><a href="#Aruki-Folder" title="Aruki Folder">Aruki Folder</a></li>
+<li class=""><a href="#Setting-Up-For-the-First-Time" title="Setting Up For the First Time">Setting Up For the First Time</a><ul class="nav">
+<li class=""><a href="#Downloading-the-Software" title="Downloading the Software">Downloading the Software</a><ul class="nav">
+<li class=""><a href="#CRAN-R" title="CRAN R">CRAN R</a></li>
+<li class=""><a href="#RStudio" title="RStudio">RStudio</a></li>
+<li class=""><a href="#PowerBI-Dashboard" title="PowerBI Dashboard">PowerBI Dashboard</a></li>
+<li class=""><a href="#Downloading-PowerBI-Software" title="Downloading PowerBI Software">Downloading PowerBI Software</a></li>
+</ul>
+</li>
+<li class=""><a href="#Using-the-Software-for-the-first-time" title="Using the Software for the first time">Using the Software for the first time</a><ul class="nav">
+<li class=""><a href="#Creating-App-Shortcut" title="Creating App Shortcut">Creating App Shortcut</a></li>
+<li class=""><a href="#PowerBI-Dashboard1" title="PowerBI Dashboard">PowerBI Dashboard</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#For-Subsequent-Use" title="For Subsequent Use">For Subsequent Use</a><ul class="nav">
+<li><a href="#Loading-New-Data" title="Loading New Data">Loading New Data</a><ul class="nav">
+<li><a href="#SAP-Business-One" title="SAP Business One">SAP Business One</a></li>
+</ul>
+</li>
+<li><a href="#R-Shiny-Application" title="R Shiny Application">R Shiny Application</a><ul class="nav">
+<li><a href="#Update-and-Run-the-App" title="Update and Run the App">Update and Run the App</a></li>
+<li><a href="#Functions-of-the-App" title="Functions of the App">Functions of the App</a></li>
+<li><a href="#How-to-Use-the-App" title="How to Use the App">How to Use the App</a></li>
+</ul>
+</li>
+<li><a href="#PowerBI-Dashboard---Sales-Analysis" title="PowerBI Dashboard - Sales Analysis">PowerBI Dashboard - Sales Analysis</a><ul class="nav">
+<li><a href="#Updating-the-data" title="Updating the data">Updating the data</a></li>
+<li><a href="#Navigating-around-the-Sales-Dashboard" title="Navigating around the Sales Dashboard">Navigating around the Sales Dashboard</a></li>
+<li><a href="#Possible-PowerBI-Dashboard-Errors" title="Possible PowerBI Dashboard Errors">Possible PowerBI Dashboard Errors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+            </ul>
+        </div>
+    </div>
+    <div id="ui-toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;" null null>
+        <div class="toc"><ul class="nav">
+<li class=""><a href="#Introduction" title="Introduction">Introduction</a></li>
+<li class=""><a href="#Aruki-Folder" title="Aruki Folder">Aruki Folder</a></li>
+<li class=""><a href="#Setting-Up-For-the-First-Time" title="Setting Up For the First Time">Setting Up For the First Time</a><ul class="nav">
+<li class=""><a href="#Downloading-the-Software" title="Downloading the Software">Downloading the Software</a><ul class="nav">
+<li class=""><a href="#CRAN-R" title="CRAN R">CRAN R</a></li>
+<li class=""><a href="#RStudio" title="RStudio">RStudio</a></li>
+<li class=""><a href="#PowerBI-Dashboard" title="PowerBI Dashboard">PowerBI Dashboard</a></li>
+<li class=""><a href="#Downloading-PowerBI-Software" title="Downloading PowerBI Software">Downloading PowerBI Software</a></li>
+</ul>
+</li>
+<li class=""><a href="#Using-the-Software-for-the-first-time" title="Using the Software for the first time">Using the Software for the first time</a><ul class="nav">
+<li class=""><a href="#Creating-App-Shortcut" title="Creating App Shortcut">Creating App Shortcut</a></li>
+<li class=""><a href="#PowerBI-Dashboard1" title="PowerBI Dashboard">PowerBI Dashboard</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#For-Subsequent-Use" title="For Subsequent Use">For Subsequent Use</a><ul class="nav">
+<li><a href="#Loading-New-Data" title="Loading New Data">Loading New Data</a><ul class="nav">
+<li><a href="#SAP-Business-One" title="SAP Business One">SAP Business One</a></li>
+</ul>
+</li>
+<li><a href="#R-Shiny-Application" title="R Shiny Application">R Shiny Application</a><ul class="nav">
+<li><a href="#Update-and-Run-the-App" title="Update and Run the App">Update and Run the App</a></li>
+<li><a href="#Functions-of-the-App" title="Functions of the App">Functions of the App</a></li>
+<li><a href="#How-to-Use-the-App" title="How to Use the App">How to Use the App</a></li>
+</ul>
+</li>
+<li><a href="#PowerBI-Dashboard---Sales-Analysis" title="PowerBI Dashboard - Sales Analysis">PowerBI Dashboard - Sales Analysis</a><ul class="nav">
+<li><a href="#Updating-the-data" title="Updating the data">Updating the data</a></li>
+<li><a href="#Navigating-around-the-Sales-Dashboard" title="Navigating around the Sales Dashboard">Navigating around the Sales Dashboard</a></li>
+<li><a href="#Possible-PowerBI-Dashboard-Errors" title="Possible PowerBI Dashboard Errors">Possible PowerBI Dashboard Errors</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div><div class="toc-menu"><a class="expand-toggle" href="#">Expand all</a><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.6.0/gist-embed.min.js" integrity="sha256-KyF2D6xPIJUW5sUDSs93vWyZm+1RzIpKCexxElmxl8g=" crossorigin="anonymous" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        var toggle = $('.expand-toggle');
+        var tocExpand = false;
+
+        checkExpandToggle();
+        toggle.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            tocExpand = !tocExpand;
+            checkExpandToggle();
+        })
+
+        function checkExpandToggle () {
+            var toc = $('.ui-toc-dropdown .toc');
+            var toggle = $('.expand-toggle');
+            if (!tocExpand) {
+                toc.removeClass('expand');
+                toggle.text('Expand all');
+            } else {
+                toc.addClass('expand');
+                toggle.text('Collapse all');
+            }
+        }
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
